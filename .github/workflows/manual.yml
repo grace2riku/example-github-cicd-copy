@@ -13,4 +13,4 @@ jobs:
     run:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "{{ inputs.greeting }}"  # 入力パラメータ「greeting」の参照
+            - run: echo "${{ inputs.greeting }}"  # 入力パラメータ「greeting」の参照
