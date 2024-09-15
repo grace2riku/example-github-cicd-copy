@@ -1,0 +1,8 @@
+# コード2.3 YAML構文のエラーを含むコード 修正版
+name: YAML error fix
+on: push
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        steps:    # インデントが2文字ずれている
+          - run: echo "YAML Syntax Error"
