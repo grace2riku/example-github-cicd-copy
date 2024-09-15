@@ -1,0 +1,8 @@
+# コード2.2 ワークフロー構文エラー
+name: Workflow error
+on: push
+jobs:
+    run:
+        run-on: ubuntu-latest
+        steps:
+            - run: date
