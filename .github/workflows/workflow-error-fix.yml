@@ -1,0 +1,8 @@
+# コード2.2 ワークフロー構文エラー 修正版
+name: Workflow error fix
+on: push
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        steps:
+            - run: date
