@@ -6,4 +6,5 @@ jobs:
     print:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "${{ github.actor }}" # githubコンテキストの参照
+#            - run: echo "${{ github.actor }}" # githubコンテキストの参照
+            - run: echo "${GITHUB_ACTOR}" # コンテキストではなくデフォルト環境変数を指定（3.2.3 デフォルト環境変数 p90）
