@@ -1,0 +1,11 @@
+# コード3.10 JSON操作の関数
+name: JSON functions
+on: push
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${CONTEXT}"
+        env:
+          CONTEXT: ${{ toJson(github) }}  # githubコンテキストをJSON文字列でダンプ
+
