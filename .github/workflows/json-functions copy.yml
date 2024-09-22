@@ -1,0 +1,12 @@
+# コード3.11 ハッシュ生成の関数
+name: Hash functions
+on: push
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "${HASH}"
+        env:
+          CONTEXT: ${{ hashFiles('.github/workflows/*.yml') }}  # ハッシュ値の生成
+
