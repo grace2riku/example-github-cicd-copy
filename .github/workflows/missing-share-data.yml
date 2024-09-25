@@ -1,0 +1,9 @@
+# コード3.17 ステップ間ではデータは引き継がれない
+name: Missing share data
+on: push
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - run: export RESULT="hello"  # つぎのステップへ環境変数で値を渡そうとしている
+      - run: echo "${RESULT}"       # しかし環境変数を参照しても空文字になる
