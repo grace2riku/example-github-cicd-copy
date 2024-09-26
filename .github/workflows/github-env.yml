@@ -1,0 +1,9 @@
+# コード3.19 GITHUB_ENV環境変数によるデータ共有
+name: GITHUB_ENV
+on: push
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "RESULT=hello" >> "${GITHUB_ENV}" # GITHUB_ENVへ書き出し
+      - run: echo "${RESULT}"                       # 通常の環境変数として参照  
