@@ -1,7 +1,8 @@
 # コード4.3 テストワークフロー
 name: Test
-on: pull_request:         # プルリクエストが作成されたら起動
-  paths: ['go/**/*.go']   # ただしGOのファイル変更時のみ
+on: 
+  pull_request:         # プルリクエストが作成されたら起動
+    paths: ['go/**/*.go']   # ただしGOのファイル変更時のみ
 jobs:
   test:
     runs-on: ubuntu-latest
