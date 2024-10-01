@@ -1,3 +1,4 @@
+// コード4.2 テストコード
 package main
 
 import "testing"

@@ -1,3 +1,4 @@
+// コード4.1 プロダクションコード
 package main 
 
 func EvenOrOdd(number int) string {
